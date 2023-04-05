@@ -16,8 +16,14 @@ public class Task1MinimumEven {
 
     System.out.println("Enter the quantity of numbers in sequence");  // O(1) time, O(1) space
     int numbers = Integer.parseInt(read.readLine()); // O(1) time, O(1) space
+    if (numbers < 0) {
+      // O(1) time, O(1) space - ?
+      throw new IllegalArgumentException("Size of list couldn't be negative: " + numbers);
+    }
 
-    System.out.println("Enter the numbers (each number from new line):"); // O(1) time, O(1) space
+    if (numbers != 0) {
+      System.out.println("Enter the numbers (each number from new line):"); // O(1) time, O(1) space
+    }
 
     int result = Integer.MAX_VALUE; // O(1) time, O(1) space
     boolean findNewResult = false; // O(1) time, O(1) space
@@ -27,8 +33,8 @@ public class Task1MinimumEven {
       incomeNumber = Integer.parseInt(read.readLine()); // O(1) time, O(1) space
 
       if (incomeNumber < 0) {
-        System.err.println("Incorrect input number" + incomeNumber); // O(1) time, O(1) space
-        break;
+        // O(1) time, O(1) space - ?
+        throw new IllegalArgumentException("Incorrect input number" + incomeNumber);
       }
 
       if ((incomeNumber % 2 == 0) && (incomeNumber < result)) {
