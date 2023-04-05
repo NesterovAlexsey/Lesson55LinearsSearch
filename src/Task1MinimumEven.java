@@ -36,7 +36,7 @@ public class Task1MinimumEven {
     }
 
     if (findNewResult) {
-      System.out.println(incomeNumber);
+      System.out.println(result);
     } else {
       System.out.println("-1");
     }
