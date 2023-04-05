@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Task1MinimumEven {
-  public static void main(String[] args) throws IOException { // O(n) time, O(1) space
+  public static void main(String[] args) throws IOException { //Result: O(n) time, O(1) space
 
     // O(1) time, O(1) space
     BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
